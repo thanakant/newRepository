@@ -1,0 +1,5 @@
+language: node_js 
+
+install: true
+after_success:
+  - scp -i "t12.pem" -r html/* ubuntu@54.187.234.133:/var/www/html/
