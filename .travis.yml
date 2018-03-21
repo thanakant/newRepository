@@ -7,4 +7,6 @@ env:
     secure: NB0lDtac3bt0R9toQmS6kYdTKNj3PIOAc2U8uGdFovsI0jb7offN3C6b6FGorThF+bVfxkX9+M+O8zibtiTdy70QM2hJ6SJREVIVhih4EfQVztk50hjsxXTbNc47tLF76EIY37SO4eYUcABDnTJOjxxq/nUUi8wnS+mqxuAewhV8FWXa19/NniGqWi05k48zOVU0KKAay4ChcUDTY0v9a+Q5pucnIAtfYQCHMqNPYpbfX/TycX0RPD2fGJlt+4YsO7wlHbX/ImNxx1CZFCuEazcI7qtJdC5KVxbUa4J6IZP5OHmHTE1EZe9FAn3wtcH8eOvPmDXxJsccKuRDwyybFWLqchnPZS655c2809ktGF7G/hGCBhevIZGa6vmxld6ljptYhFcDoSMZy9+IKk/UGjRNRKqvtKKKW/o1Zwmx8/tlayVNZHaIiQpGzytvxz4CR3f5vY8xNiA7U8WmGgMFNxH4RFj+IT8TmUOcC0zFBJMCr8rhmur/+k0KYdKxejk/dKpXHu37e3DRSXjLb+fyWRFhX2WcC2QfkQda1RD3lPQR6R2t8/o6MqfmXJmhJXy3FY/d4WcN85no5jfhu3n0svuOC7Y0NLlWy/2cK1Ze9AdjemxPHr4Y3DVrtiIU9OpZSRkHL7mlnY1/qrqNq/p11QIywEpT7QcBObMRCcbTR8c=
 before_install:
   - openssl aes-256-cbc -k "$super_secret_password" -in t12.pem.enc -out t12.pem -d
-  
+  addons:
+ ssh_known_hosts:
+  - 54.187.234.133
